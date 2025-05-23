@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mix Vocals & Beat (Preview + Download)</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<video autoplay muted loop id="bg-video">
+  <source src="https://files.catbox.moe/lai1jq.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<div class="container">
+  <h2>Mix Vocals & Beat (Preview + Download)</h2>
+  
+  <label for="vocals">Upload Vocals (mp3/wav):</label>
+  <input type="file" id="vocals" accept="audio/*" />
+  <audio id="vocalsPlayer" controls></audio>
+
+  <label for="beat">Upload Beat (mp3/wav):</label>
+  <input type="file" id="beat" accept="audio/*" />
+  <audio id="beatPlayer" controls></audio>
+
+  <button id="playBoth">Play Both</button>
+  <button id="downloadMix">Download Mixed Audio</button>
+</div>
+
+<footer> &copy; Mr Smile</footer>
+
+<script src="mix.js"></script>
+
+</body>
+</html>
